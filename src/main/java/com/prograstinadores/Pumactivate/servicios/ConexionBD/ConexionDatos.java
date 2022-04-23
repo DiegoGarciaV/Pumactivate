@@ -1,7 +1,7 @@
 package com.prograstinadores.Pumactivate.servicios.ConexionBD;
 
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.Map;
+import java.util.List;
 
 public interface ConexionDatos {
 
@@ -11,15 +11,15 @@ public interface ConexionDatos {
 
     public String getBDNombre();
 
-    public void setBDparams(HashMap<String,String> BDpametros);
+    public void setBDparams(Map<String,String> BDpametros);
     
-    public HashMap<String,String> getBDparams();
+    public Map<String,String> getBDparams();
    
-    public int insertarDatos(String tabla,HashMap<String,String> valores);
+    public int insertarDatos(String tabla,Map<String,String> valores);
 
-    public LinkedList<HashMap<String,String>> consultaQuery(String sqlq);
+    public List<Map<String,String>> consultaQuery(String sqlq);
 
-    public LinkedList<HashMap<String,String>> ejecProc(String proc, LinkedList<Object> params);
+    public List<Map<String,String>> ejecProc(String proc, List<Object> params);
 
     public int eliminaDatos(String tabla, String criterio);
 }

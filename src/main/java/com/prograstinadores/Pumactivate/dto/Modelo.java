@@ -1,6 +1,6 @@
 package com.prograstinadores.Pumactivate.dto;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public interface Modelo {
 
@@ -8,15 +8,15 @@ public interface Modelo {
     
     public boolean setValorAtributo(String atributo,String valor);
 
-    public boolean setAtributos(HashMap<String,Object> atributos);
+    public boolean setAtributos(Map<String,Object> atributos);
 
-    public boolean setAtributosS(HashMap<String,String> atributos);
+    public boolean setAtributosS(Map<String,String> atributos);
 
     public String toString();
 
-    public HashMap<String,Object> toHMap();
+    public Map<String,Object> toHMap();
 
-    public HashMap<String,String> toHMapS();
+    public Map<String,String> toHMapS();
 
     
 }

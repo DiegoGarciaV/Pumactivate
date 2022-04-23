@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es" ng-app="PaletasApp">
+<html lang="es" ng-app="indexApp">
     <head>
         <title>Administración Pumactivate</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
