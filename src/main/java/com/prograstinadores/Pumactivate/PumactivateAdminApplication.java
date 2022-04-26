@@ -8,7 +8,7 @@ public class PumactivateAdminApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PumactivateAdminApplication.class, args);
-		System.out.println("Aplicacion Pumactivate corriendo");
+		System.out.println("Aplicacion Pumactivate corriendo\n\n");
 	}
 
 }

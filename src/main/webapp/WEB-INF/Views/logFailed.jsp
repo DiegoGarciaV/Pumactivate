@@ -18,7 +18,7 @@
         <script type="text/javascript" src="js/app.js"></script>
 
     </head>
-    <body onload="onloadBody()" ng-controller="controlador">
-        <a href="login">Iniciar sesion</a>
+    <body onload="onloadBody()" ng-controller="login">
+        <h1>Fallo en inicio de sesion</h1>
     </body>
 </html>

@@ -24,7 +24,7 @@ public class Configuracion {
         BDparams.put("port", "3306");
         BDparams.put("username", "root");
         BDparams.put("password", "1234");
-        BDparams.put("database", "paletas");
+        BDparams.put("database", "pumactivate");
         conexionDatos.setBDparams(BDparams);
         return conexionDatos;
   }

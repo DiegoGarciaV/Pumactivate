@@ -17,6 +17,8 @@ public interface ConexionDatos {
    
     public int insertarDatos(String tabla,Map<String,String> valores);
 
+    public boolean login(String tabla, String uField, String pField, String username, String password);
+
     public List<Map<String,String>> consultaQuery(String sqlq);
 
     public List<Map<String,String>> ejecProc(String proc, List<Object> params);

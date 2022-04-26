@@ -1,7 +1,6 @@
 package com.prograstinadores.Pumactivate.servicios.ConexionBD;
 
 import java.sql.*;
-import java.sql.DriverManager;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -182,6 +181,28 @@ public class ConexionDatosImp implements ConexionDatos{
             System.err.println(e.toString());
             return -1;
         }
+    }
+
+    @Override
+    public boolean login(String tabla, String uField, String pField, String username, String password){
+        
+        String sqlq = "SELECT * FROM " + tabla + " WHERE " + uField + " = ? AND " + pField + " = ?";
+        PreparedStatement ps;
+        try 
+        {
+            ps = conn.prepareStatement(sqlq);
+            ps.setString(1, username);
+            ps.setString(2, password);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next())
+                return true;
+
+        } catch (SQLException e) {
+            
+            e.printStackTrace();
+        }
+        
+        return false;
     }
     
 }

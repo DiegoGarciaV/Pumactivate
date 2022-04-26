@@ -18,7 +18,18 @@
         <script type="text/javascript" src="js/app.js"></script>
 
     </head>
-    <body onload="onloadBody()" ng-controller="controlador">
-        <a href="login">Iniciar sesion</a>
+    <body onload="onloadBody()" ng-controller="login">
+        <h1>Login</h1>
+        <form>
+            <input type="text" ng-model="username">
+            <input type="password" ng-model="password">
+            <button ng-click="logUser()">Enviar</button>
+        </form>
+
+        <div>
+            <h2>{{logedUser.username}}</h2>
+            <p>Email: {{logedUser.email}}</p>
+            <p>Rol: {{logedUser.username}}</p>
+        </div>
     </body>
 </html>
